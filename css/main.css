@@ -158,6 +158,11 @@ ul {
 .wrapper {
     grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
 }
+.wrapper > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @media (max-width:767px) {
     .wrapper {
         grid-template-columns: minmax(200px , 1fr);
